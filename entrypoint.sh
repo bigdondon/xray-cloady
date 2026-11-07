@@ -13,7 +13,7 @@ cat > /etc/xray/config.json <<JSON
     {
       "port": ${PORT},
       "protocol": "vless",
-      "settings": { "clients": [ { "id": "${UUID}" } ] },
+      "settings": { "clients": [ { "id": "${UUID}" } ], "decryption": "none" },
       "streamSettings": { "network": "ws", "wsSettings": { "path": "${WS_PATH}" } }
     }
   ],
